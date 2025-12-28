@@ -2504,6 +2504,7 @@ pre .javascript .function {
   position: absolute;
   right: 0;
   top: 0;
+  pointer-events: none;
 }
 @media screen and (max-width: 767px) {
   .back-to-top-wrapper {
@@ -2524,6 +2525,7 @@ pre .javascript .function {
   position: fixed;
   bottom: 240px;
   opacity: 1;
+  pointer-events: auto;
   -webkit-transition: background 0.15s ease-out, opacity 0.15s ease-out, -webkit-transform 0.15s ease-out;
   -moz-transition: background 0.15s ease-out, opacity 0.15s ease-out, -moz-transform 0.15s ease-out;
   -ms-transition: background 0.15s ease-out, opacity 0.15s ease-out, -ms-transform 0.15s ease-out;
