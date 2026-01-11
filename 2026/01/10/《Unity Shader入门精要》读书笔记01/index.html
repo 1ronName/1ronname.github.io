@@ -14,21 +14,21 @@
   
 
   
-  <title>about | IronName | Blog</title>
+  <title>《Unity Shader入门精要》读书笔记01 | IronName | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="一个普通的大学生呀 喜欢看动画、打游戏看书，听音乐也想画画，演奏乐器，编曲，唱歌曾经是“胶佬”会剪视频，编程喜欢跑步（虽然在校期间很少跑喜欢骑自行车（这真是伟大的发明      横幅图来源: 《OPUS:龙脉常歌》艾妲的同人图(从壁纸引擎的创意工坊获取的，未找到原作者)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://blog.ironname.top/about/index.html">
+  <meta name="description" content="第二章 渲染流水线概念流水线从一系列的顶点数据、纹理等信息出发，把这些信息最终转换成图像。这个工作由CPU和GPU共同完成。《Real—Time Rendering, Third Edition》中将渲染流程分为3个阶段：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）应用阶段由 CPU 负责，开发者准备场景数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Unity Shader入门精要》读书笔记01">
+<meta property="og:url" content="https://blog.ironname.top/2026/01/10/%E3%80%8AUnity%20Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/index.html">
 <meta property="og:site_name" content="IronName | Blog">
-<meta property="og:description" content="一个普通的大学生呀 喜欢看动画、打游戏看书，听音乐也想画画，演奏乐器，编曲，唱歌曾经是“胶佬”会剪视频，编程喜欢跑步（虽然在校期间很少跑喜欢骑自行车（这真是伟大的发明      横幅图来源: 《OPUS:龙脉常歌》艾妲的同人图(从壁纸引擎的创意工坊获取的，未找到原作者)">
+<meta property="og:description" content="第二章 渲染流水线概念流水线从一系列的顶点数据、纹理等信息出发，把这些信息最终转换成图像。这个工作由CPU和GPU共同完成。《Real—Time Rendering, Third Edition》中将渲染流程分为3个阶段：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）应用阶段由 CPU 负责，开发者准备场景数">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-12-28T13:28:55.000Z">
-<meta property="article:modified_time" content="2025-12-29T01:40:47.653Z">
+<meta property="article:published_time" content="2026-01-10T01:38:13.000Z">
+<meta property="article:modified_time" content="2026-01-11T04:58:49.475Z">
 <meta property="article:author" content="IronName">
 <meta property="article:tag" content="blog, technical artist, ironname">
 <meta name="twitter:card" content="summary">
@@ -175,7 +175,9 @@
        
 
 
-<article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-《Unity Shader入门精要》读书笔记01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
    
   <div class="article-inner">
     <div class="article-main">
@@ -186,7 +188,7 @@
   
     
       <h1 class="p-name article-title" itemprop="headline name">
-        about
+        《Unity Shader入门精要》读书笔记01
       </h1>
     
   
@@ -194,31 +196,68 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2025-12-28T13:28:55.000Z" itemprop="datePublished">2025-12-28</time>
+  <time class="dt-published" datetime="2026-01-10T01:38:13.000Z" itemprop="datePublished">2026-01-10</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
   
-    未分类 
+  <a class="meta-cate-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
    
 </div>
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            127 词 
+            2.8k 词 
           </div>
         </div>
         
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h3 id="一个普通的大学生呀"><a href="#一个普通的大学生呀" class="headerlink" title="一个普通的大学生呀"></a>一个普通的大学生呀</h3><blockquote>
-<p>喜欢看动画、打游戏<br>看书，听音乐<br>也想画画，演奏乐器，编曲，唱歌<br>曾经是“胶佬”<br>会剪视频，编程<br>喜欢跑步（虽然在校期间很少跑<br>喜欢骑自行车（这真是伟大的发明  </p>
+          <h1 id="第二章-渲染流水线"><a href="#第二章-渲染流水线" class="headerlink" title="第二章 渲染流水线"></a>第二章 渲染流水线</h1><h2 id="概念流水线"><a href="#概念流水线" class="headerlink" title="概念流水线"></a>概念流水线</h2><p>从一系列的顶点数据、纹理等信息出发，把这些信息最终转换成图像。这个工作由CPU和GPU共同完成。<br>《Real—Time Rendering, Third Edition》中将渲染流程分为3个阶段：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）<br><strong>应用阶段</strong>由 CPU 负责，开发者准备场景数据，粗粒度剔除（culling），设置每个模型的渲染状态（材质、纹理、Shader）。这一阶段最重要的输出是渲染所需要的几何信息，即<strong>渲染图元（rendering primitives）</strong><br><strong>几何阶段</strong>通常在 GPU 上进行，处理每个渲染图元，进行逐顶点、逐多边形的操作。输出屏幕空间的二维顶点坐标、每个顶点对应的深度值、着色等相关信息。<br><strong>光栅化阶段</strong>在GPU上运行，决定每个渲染图元中哪些像素应该被绘制在屏幕上。对上一阶段得到的逐顶点数据（例如纹理坐标、顶点颜色等）进行插值，然后再进行逐像素处理。  </p>
+<h2 id="CPU-和-GPU-之间的通信"><a href="#CPU-和-GPU-之间的通信" class="headerlink" title="CPU 和 GPU 之间的通信"></a>CPU 和 GPU 之间的通信</h2><p>应用阶段：<br>（1）把数据加载到显存中。硬盘（Hard Disk Drive， HDD）-›系统内存（Random Access Memory，RAM）-&gt;显存（Video Random Access Memory， VRAM）<br>（2）设置渲染状态。例如使用哪个顶点着色器（Vertex Shader）&#x2F;片元着色器（Fragment Shader）、光源属性、材质等。<br>（3）调用Draw Call。  </p>
+<h2 id="GPU-流水线"><a href="#GPU-流水线" class="headerlink" title="GPU 流水线"></a>GPU 流水线</h2><blockquote>
+<p>顶点数据-&gt;<br>—&gt;（几何阶段）<strong>顶点着色器</strong>(-&gt;<strong>曲面细分着色器</strong>)(-&gt;<strong>几何着色器</strong>)-&gt;<em>裁剪</em>-&gt;屏幕映射-&gt;<br>—&gt;（光栅化阶段）三角形设置-&gt;三角形遍历(-&gt;<strong>片元着色器</strong>)-&gt;<em>逐片元操作</em>-&gt;<br>屏幕图像<br>&#x2F;&#x2F;<strong>可编程</strong> <em>可配置</em> （可选）  </p>
 </blockquote>
-<hr>
+<ul>
+<li><p><strong>顶点着色器（Vertex Shader）</strong><br>逐顶点调用，无法得知顶点与顶点之间的关系。主要工作：坐标变换和逐顶点光照。坐标变换是从模型空间转换到齐次裁剪空间，顶点坐标转变为归一化的设备坐标（Normalized Device Coordinates， NDC）</p>
+</li>
+<li><p><strong>裁剪（Clipping）</strong><br>根据NDC下的顶点位置，保留&#x2F;舍弃&#x2F;裁剪图元。  </p>
+</li>
+<li><p><strong>屏幕映射（Screen Mapping）</strong><br>把每个图元的x、y坐标转换到屏幕坐标系（Screen Coordinates）。屏幕坐标系和z坐标一起构成了窗口坐标系（Window Coordinates）。<br>注意屏幕坐标系在 OpenGL 和 DirectX 之间的差异：OpenGL 把屏幕的左下角当成最小的窗口坐标值，而DirectX则定义了屏幕的左上角为最小的窗口坐标值。  </p>
+</li>
+<li><p><strong>三角形遍历（Triangle Traversal）&#x2F; 扫描变换（Scan Conversion）</strong><br>检查每个像素是否被一个三角网格覆盖，被覆盖就生成一个片元（fragment）。使用三角网格 3 个顶点的顶点信息对整个覆盖区域的像素进行插值。最后输出一个片元序列。</p>
+</li>
+</ul>
 <blockquote>
-<p>横幅图来源: 《OPUS:龙脉常歌》艾妲的<a target="_blank" rel="noopener" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2837268798">同人图</a><br>(从壁纸引擎的创意工坊获取的，未找到原作者)</p>
+<p>一个片元并不是真正意义上的像素，而是包含了很多状态的集合，这些状态用于计算每个像素的最终颜色。这些状态包括了（但不限于）它的屏幕坐标、深度信息，以及其他从几何阶段输出的顶点信息，例如法线、纹理坐标等。</p>
 </blockquote>
+<ul>
+<li><p><strong>片元着色器（Fragment Shader）&#x2F; 像素着色器（Pixel Shader）</strong><br>输入：上个阶段对顶点信息插值得到的结果。<br>输出：一个或多个颜色值。<br>在此阶段可以做纹理采样。它只能影响单个片元。除非可以访问导数信息（gradient，or derivative）  </p>
+</li>
+<li><p><strong>逐片元操作（Per-Fragment Operations）&#x2F; 输出合并阶段（Output-Merger）</strong><br>（1）决定每个片元的<strong>可见性</strong>。如深度测试、模板测试<br>（2）若片元通过测试，就需要把这个片元的颜色值和已经存储在颜色缓冲区的颜色进行合并&#x2F;混合。</p>
+</li>
+<li><p><strong>模板测试（Stencil Test）</strong>——模板缓冲（Stencil Buffer）<br>GPU 会首先读取（使用读取掩码）模板缓冲区中该片元位置的模板值，然后将该值和读取（使用读取掩码）<br>到的参考值（reference value）进行比较，这个比较函数可由开发者指定。开发者可以设置不同结果下的修改操作，例如，在失败时模板缓冲区保持不变，通过时将模板缓冲区中对应位置的值加 1 等。模板测试通常用千限制渲染的区域。另外，模板测试还有一些更高级的用法，如渲染阴影、轮廓渲染等。  </p>
+</li>
+<li><p><strong>深度测试（Depth Test）</strong><br>GPU 会把该片元的深度值和已经存在于深度缓冲区中的深度值进行比较。这个比较函数也是可由开发者设置的，例如小于时舍弃该片元，或者大于等于时舍弃该片元。  </p>
+</li>
+<li><p><strong>混合（Blend）</strong>——半透明物体会用到。可以高度配置。</p>
+</li>
+<li><p>Early-Z 技术：将深度测试提前到片元着色器之前。尽可能早地知道哪些片元是会被舍弃的，对于这些片元就不需要再使用片元着色器来计算它们的颜色。<br>但是！如果将这些测试提前的话，其检验结果可能会与片元着色器中的一些操作冲突。   </p>
+</li>
+<li><p>为了避免我们看到那些正在进行光栅化的图元，GPU 会使用<strong>双重缓冲 (Double Buffering)</strong> 的策略。这意味着，对场景的渲染是在幕后发生的，即在<strong>后置缓冲(Back Buffer)</strong> 中。一旦场景已经被渲染到了后置缓冲中，GPU 就会交换后置缓冲区和<strong>前置缓冲(Front Buffer)</strong> 中的内容，而前置缓冲区是之前显示在屏幕上的图像。由此，保证了我们看到的图像总是连续的。</p>
+</li>
+</ul>
+<h2 id="术语解释"><a href="#术语解释" class="headerlink" title="术语解释"></a>术语解释</h2><ul>
+<li><p>OpenGL&#x2F;DirectX<br>图像应用编程接口，用于渲染二维或三维图形，架起了上层应用程序和底层 GPU 的沟通桥梁。一个应用程序向这些接口发送渲染命令，而这些接口会依次向显卡驱动 (Graphics Driver) 发送渲染命令。  </p>
+</li>
+<li><p>HLSL、GLSL、CG<br>着色语言（Shading Language）。DirectX 的 HLSL (High Level Shading Language)、 OpenGL 的 GLSL (OpenGL Shading Language) 以及 NVIDIA 的CG（C for Graphic）。   </p>
+</li>
+<li><p>Draw Call<br>CPU 调用图像编程接口，如 OpenGL 中的 glDrawElements 命令或者 DirectX 中的 DrawlndexedPrim itive 命令 ，以命令 GPU 进行渲染的操作。Draw Call 中造成性能问题的是 CPU。<br>减少Draw Call 开销的方法：（1）避免使用大量很小的网格。无法避免时考虑能否合并。（2）避免使用过多的材质。尽量在不同的网格之间共用一个材质。</p>
+</li>
+<li><p>固定管线渲染（Fixed-Function Pipeline）<br>通常是指在较旧的 GPU 上实现的渲染流水线。这种流水线只给开发者提供一些配置操作。</p>
+</li>
+</ul>
 
         
       </div>
@@ -230,6 +269,29 @@
   </div>
   
     
+<nav id="article-nav">
+  <a class="article-nav-btn left  disabled "
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2026/01/09/%E6%95%B4%E7%90%86-TA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6/"
+      title="整理-TA系统学习框架"
+     >
+
+    <p class="title-text">
+      
+        整理-TA系统学习框架
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
 
   
 </article>

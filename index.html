@@ -143,7 +143,7 @@
       <div class="category-box">
             <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">
                 学习
-                <div class="category-count">2</div>
+                <div class="category-count">3</div>
             </a>
         
             <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">
@@ -171,6 +171,77 @@
     </div>
     <div id="content-body">
       
+   
+
+
+<article id="post-《Unity Shader入门精要》读书笔记01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2026/01/10/%E3%80%8AUnity%20Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/">《Unity Shader入门精要》读书笔记01</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2026-01-10T01:38:13.000Z" itemprop="datePublished">2026-01-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            2.8k 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              第二章 渲染流水线概念流水线从一系列的顶点数据、纹理等信息出发，把这些信息最终转换成图像。这个工作由CPU和GPU共同完成。《Real—Time Rendering, Third Edition》中将渲染流程分为3个阶段：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）应用阶段由 CPU 负责，开发者准备场景数据，粗粒度剔除（culling），设置每个模型的渲染状态（材质、纹理、Shader）。这一阶段最重要的输出是渲染所需要的几何信息，即渲染图元（rendering primitives）几何阶段通常在 GPU 上进行，处理每个渲染图元，进行逐顶点、逐多边形的操作。输出屏幕空间的二维顶点坐标、每个顶点对应的深度值、着色等相关信息。光栅化阶段在GPU上运行，决定每个渲染图元中哪些像素应该被绘制在屏幕上。对上一阶段得到的逐顶点数据（例如纹理坐标、顶点颜色等）进行插值，然后再进行逐像素处理。  
+CPU 和 GPU 之间的通信应用阶段：（1）把数据加载到显存中。硬盘（Hard Disk Drive...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2026/01/10/%E3%80%8AUnity%20Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
    
 
 
@@ -220,8 +291,9 @@
 
 基础阶段1.美术基础精虫叔叔设计秘密01 「轮廓-轮廓长线条短线条变化」设计入门教室系列 （平面构成）摄影：北京工业大学公开课：摄影的实用性与艺术性漫谈  
 2.程序基础计算机专业课程（az，我不得不上的课）  
-入门阶段1.渲染知识	《Unity Shader入门精要》	《GPU阳春白雪与下里巴人》	《3D Game Programming with DirectX》程序类分支必读（龙书，啃！）	龙书DX12有中译版，翻译和注解都很用心，推荐～https://book.douban.com/subject/30426701/?dt_dapp=1	《Real-Time Rendering》渲染向入门后必读	字典：	《GPU精粹1-3》  
-2.美术制作流程 （推荐内容暂无，因为我自己是朋友给的教程，SO，B站自行搜索)	建模-展UV-贴图绘制	（一般可以委托美术同学制作，但是美术向的同学基本必须自己有修改能力，流程向必须全部了解）	蒙皮-绑定	(动作向同学必修内容)...
+入门阶段1.渲染知识	《Unity Shader入门精要》	《GPU阳春白雪与下里巴人》	《3D Game Programming with DirectX》程序类分支必读（龙书，啃！）	《DirectX 12 3D 游戏开发实战》（龙书DX12 中译版，翻译和注解都很用心，推荐～）	《Real-Time Rendering》渲染向入门后必读	字典：	《GPU精粹1-3》  
+2.美术制作流程 （推荐内容暂无，因为我自己是朋友给的教程，SO，B站自行搜索)	建模-展UV-贴图绘制	（一般可以委托美术同学制作，但是美术向的同学基本必须自己有修改能力，流程向必须全部了解）	蒙皮-绑定	(动作向同学必修内容)	动画制作  
+3、环节规范：(推荐内容暂无，和项目相...
             
           </div>
         
