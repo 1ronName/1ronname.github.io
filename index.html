@@ -143,7 +143,7 @@
       <div class="category-box">
             <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">
                 学习
-                <div class="category-count">3</div>
+                <div class="category-count">4</div>
             </a>
         
             <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">
@@ -174,7 +174,7 @@
    
 
 
-<article id="post-《Unity Shader入门精要》读书笔记01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-《Unity-Shader入门精要》读书笔记02" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
   <div class="article-inner">
     <div class="article-main">
@@ -185,7 +185,84 @@
   
     
       <h1 itemprop="name">
-        <a class="p-name article-title" href="/2026/01/10/%E3%80%8AUnity%20Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/">《Unity Shader入门精要》读书笔记01</a>
+        <a class="p-name article-title" href="/2026/01/12/%E3%80%8AUnity-Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B002/">《Unity Shader入门精要》读书笔记02</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2026-01-12T03:22:07.000Z" itemprop="datePublished">2026-01-12</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            3k 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              第 3 章 Unity Shader 基础Unity Shader 简化了开发者管理着色器代码以及渲染设置的方式，不需要管理多个文件和函数。  （它不是真的 Shader 文件）Unity Shader 装在**材质（Material）**上，材质再赋给要渲染的对象。
+
+在 Unity 2022.3.52f1c1 的 3D(Built-In Render Pipeline) 中，Shader 的类型有 Standard Surface Shader；Unlit Shader；Image Effect Shader；Compute Shader；Ray Tracing Shader。  
+
+Unity Shader 的导入面板
+Default Maps 中可以指定该 Unity Shader 使用的默认纹理。当任何材质第一次使用该Unity Shader 时，这些纹理就会自动被赋予到相应的属性上。  
+通过单击 Show generated code 按钮来打开一个新的文件，在该文件里将显示Unity在背后为该表面着色器生成的顶点&#x2F;片元着色器。  
+Compile and...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2026/01/12/%E3%80%8AUnity-Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B002/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+   
+
+
+<article id="post-《Unity-Shader入门精要》读书笔记01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2026/01/10/%E3%80%8AUnity-Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/">《Unity Shader入门精要》读书笔记01</a>
       </h1>
     
   
@@ -213,8 +290,8 @@
         
           <div class="truncate-text">
             
-              第二章 渲染流水线概念流水线从一系列的顶点数据、纹理等信息出发，把这些信息最终转换成图像。这个工作由CPU和GPU共同完成。《Real—Time Rendering, Third Edition》中将渲染流程分为3个阶段：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）应用阶段由 CPU 负责，开发者准备场景数据，粗粒度剔除（culling），设置每个模型的渲染状态（材质、纹理、Shader）。这一阶段最重要的输出是渲染所需要的几何信息，即渲染图元（rendering primitives）几何阶段通常在 GPU 上进行，处理每个渲染图元，进行逐顶点、逐多边形的操作。输出屏幕空间的二维顶点坐标、每个顶点对应的深度值、着色等相关信息。光栅化阶段在GPU上运行，决定每个渲染图元中哪些像素应该被绘制在屏幕上。对上一阶段得到的逐顶点数据（例如纹理坐标、顶点颜色等）进行插值，然后再进行逐像素处理。  
-CPU 和 GPU 之间的通信应用阶段：（1）把数据加载到显存中。硬盘（Hard Disk Drive...
+              第 2 章 渲染流水线概念流水线从一系列的顶点数据、纹理等信息出发，把这些信息最终转换成图像。这个工作由CPU和GPU共同完成。《Real-Time Rendering, Third Edition》中将渲染流程分为3个阶段：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）应用阶段由 CPU 负责，开发者准备场景数据，粗粒度剔除（culling），设置每个模型的渲染状态（材质、纹理、Shader）。这一阶段最重要的输出是渲染所需要的几何信息，即渲染图元（rendering primitives）几何阶段通常在 GPU 上进行，处理每个渲染图元，进行逐顶点、逐多边形的操作。输出屏幕空间的二维顶点坐标、每个顶点对应的深度值、着色等相关信息。光栅化阶段在GPU上运行，决定每个渲染图元中哪些像素应该被绘制在屏幕上。对上一阶段得到的逐顶点数据（例如纹理坐标、顶点颜色等）进行插值，然后再进行逐像素处理。  
+CPU 和 GPU 之间的通信应用阶段：（1）把数据加载到显存中。硬盘（Hard Disk Dri...
             
           </div>
         
@@ -226,7 +303,7 @@ CPU 和 GPU 之间的通信应用阶段：（1）把数据加载到显存中。�
      
     <a class="right-panel  non-pic  "
       
-      href="/2026/01/10/%E3%80%8AUnity%20Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/" 
+      href="/2026/01/10/%E3%80%8AUnity-Shader%E5%85%A5%E9%97%A8%E7%B2%BE%E8%A6%81%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B001/" 
     >
        
       <i class="fa-solid fa-angle-right non-pic"></i>
